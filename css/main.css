@@ -284,6 +284,8 @@ a {
     padding: 0;
     margin: 0;
     position: relative;
+    margin-top: -50px;
+
 }
 
 .hero img {
@@ -306,6 +308,7 @@ a {
     display: flex; /* Flexivel para de adaptar a telas menores */
     justify-content: center; /* Centralizar todo o conteúdo */
     align-items: flex-end;
+
 
 }
 
@@ -360,12 +363,10 @@ a {
   background: rgb(237, 237, 238);
   font-size: 30px;
   color: rgb(248, 0, 0);
-  border-radius: 50px;
   transition: .3s;
   width: 50px;
   height: 50px;
   margin: 30px;
-  
   justify-content: center;
   align-items: center;
   display: flex;
@@ -408,12 +409,14 @@ a {
 
 .featured-services .service-item .icon {
   margin-bottom: 10px;
+  
 }
 
 .featured-services .service-item .icon i {
-  color: #cecece;
-  font-size: 36px;
+  color: #000000;
+  font-size: 30px;
   transition: ease-in-out 0.3s;
+  
 }
 
 
@@ -454,12 +457,104 @@ a {
   transition: all 0.1s;
 }
 
+/* Situação Linha */
+
+/* Estilos gerais */
+.text-center h3{ 
+  font-size: 30px;
+}
+
+
+.container ul {
+  padding: 0;
+  list-style: none;
+}
+
+.text-center .container li {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.container li:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo dos ícones */
+.container li i {
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+/* Cores das linhas */
+.container li:nth-child(1) i {
+  color: #00378c; /* Linha Azul */
+}
+
+.container li:nth-child(2) i {
+  color: #186d55; /* Linha Verde */
+}
+.container li:nth-child(3) i {
+  color: #f51200; /* Linha Vermelha */
+}
+.container li:nth-child(4) i {
+  color: #efba00; /* Linha Amarela */
+}
+.container  li:nth-child(5) i {
+  color: #9271b1; /* Linha Lilás */
+}
+.container  li:nth-child(6) i {
+  color: #c80857; /* Linha Rubi */
+}
+.container  li:nth-child(7) i {
+  color: #949488; /* Linha Diamante */
+}
+.container  li:nth-child(8) i {
+  color: #219896; /* Linha Esmeralda */
+}
+.container li:nth-child(9) i {
+  color: #1c8aab; /* Linha Turquesa */
+}
+.container  li:nth-child(10) i {
+  color: #f46c55; /* Linha Coral */
+}
+.container  li:nth-child(11) i {
+  color: #1f2086; /* Linha Safira */
+}
+.container  li:nth-child(12) i {
+  color: #29b352; /* Linha Jade */
+}
+.container  li:nth-child(13) i {
+  color: #848d90; /* Linha Prata */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container li {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container li i {
+    margin-bottom: 5px;
+  }
+}
+
+
 /* Global Sections */
 section, 
 .section {
   background: #e0e0e0;
-  padding: 60px 0;
+  padding: 50px 0;
 }
+
+
 
 @media (max-width: 1199px) {
   section, 
@@ -513,6 +608,12 @@ section,
 }
 
 /*  About  */
+#about img {
+  width: 1100px;
+  height: 500px;
+  margin-right: 20px;
+}
+
 .about .content h3 {
   font-size: 1.75rem;
   /* Multiplicar *16 ou dividir /16 */
